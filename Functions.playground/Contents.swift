@@ -54,7 +54,7 @@ greet("Taylor")
 
 // Default Parameters
 
-func greet(_ person: String, nicely: Bool) {
+func greet(_ person: String, nicely: Bool = true) {
     if nicely == true {
         print("Hello, \(person)!")
     } else {
