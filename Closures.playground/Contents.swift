@@ -10,9 +10,45 @@ import Cocoa
 //driving ()
 
 // Accepting parameters in a closure
+//
+//let driving = { (place: String) in
+//    print("I'm going to \(place) in my car")
+//}
+//driving("London")
 
-let driving = { (place: String) in
-    print("I'm going to \(place) in my car")
+
+// Returning values in closure
+let drivingWithReturn = { (place: String) -> String in
+    return "I'm going to \(place) in my car"
 }
-driving("London")
+
+
+let message = drivingWithReturn("London")
+print(message)
+
+// Closures as Parameters
+
+//let driving = {
+//    print("I'm driving in my car")
+//}
+//
+//func travel(action: () -> Void) {
+//    print("I'm getting ready to go.")
+//    action()
+//    print("I arrived!")
+//}
+//
+//travel(action: driving)
+
+// Trailing closure syntax
+
+func travel(action: () -> Void) {
+    print("I'm getting ready to go.")
+    action()
+    print("I arrived!")
+}
+
+travel {
+    print("I'm driving in my car")
+}
 
