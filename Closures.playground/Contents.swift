@@ -133,3 +133,42 @@ travel {
 
 
 
+// Closures with multiple parameters
+
+func travel2(action: (String, Int) -> String) {
+    print("I'm getting ready to go.")
+    let description = action("London", 60)
+    print(description)
+    print("I arrived!")
+}
+
+
+travel2 { (place: String, miles: Int) -> String in
+    "I'm going to \(place) at \(miles) miles per hour."
+}
+
+// written in shorthand
+
+travel2 {
+    "I'm going to \($0) at \($1) miles per hour."
+}
+
+
+// Returning closures from functions + capturing values
+
+func travel3() -> (String) -> Void {
+    var counter = 1
+    return {
+        print("\(counter). I'm going to \($0)")
+        counter += 1
+    }
+}
+
+let result = travel3()
+result("London")
+
+let result2 = travel3()("London")
+
+
+
+
