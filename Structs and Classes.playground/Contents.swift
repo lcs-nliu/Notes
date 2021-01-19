@@ -1,8 +1,13 @@
 import Cocoa
 
-struct Location {
+class Location {
     var x: Int
     var y: Int
+    
+    init(x: Int, y:Int){
+        self.x = x
+        self.y = y
+    }
 
 }
 
@@ -31,4 +36,16 @@ home.y
 // Where is school?
 school.x
 school.y
+
+
+
+school.y = 100
+// Where is home?
+home.x
+home.y
+
+// Where is school?
+school.x
+school.y
+
 
