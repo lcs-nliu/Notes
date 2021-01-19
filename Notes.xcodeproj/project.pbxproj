@@ -26,6 +26,7 @@
 		46316A9B25ADF4ED00CB5F18 /* Notes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Notes; sourceTree = BUILT_PRODUCTS_DIR; };
 		46316A9E25ADF4ED00CB5F18 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		46316AA625ADF54900CB5F18 /* Functions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		463E7D9D25B7252B006733C1 /* Structs and Classes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structs and Classes.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4652725F25B615E000EC0FAB /* Structures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Structures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		46A7D3B625AF425F00D0650B /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -44,6 +45,7 @@
 		46316A9225ADF4ED00CB5F18 = {
 			isa = PBXGroup;
 			children = (
+				463E7D9D25B7252B006733C1 /* Structs and Classes.playground */,
 				4652725F25B615E000EC0FAB /* Structures.playground */,
 				46A7D3B625AF425F00D0650B /* Closures.playground */,
 				46316AA625ADF54900CB5F18 /* Functions.playground */,

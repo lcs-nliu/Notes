@@ -68,6 +68,7 @@ struct Person {
 
     mutating func makeAnonymous() {
         name = "Anonymous"
+    
     }
 }
 
