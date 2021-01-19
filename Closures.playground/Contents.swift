@@ -54,7 +54,7 @@ print(message)
 
 // CLOSURE PART TWO
 
-// Using closures as parameters
+// Using closures as parameters when they accept parameters
 
 func travel(action: (String) -> Void) {
     print("I'm getting ready to go.")
@@ -167,7 +167,8 @@ func travel3() -> (String) -> Void {
 let result = travel3()
 result("London")
 
-let result2 = travel3()("London")
+// can also do this but not reccomended
+//let result2 = travel3()("London")
 
 
 
