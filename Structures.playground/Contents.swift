@@ -144,5 +144,36 @@ struct Person3 {
 var ed = Person3(name: "Ed")
 ed.familyTree
 
+// Static properties
 
+struct Student {
+    static var classSize = 0
+    var name: String
+
+    init(name: String) {
+        self.name = name
+        Student.classSize += 1
+    }
+}
+
+let max = Student(name: "Max")
+let taylor = Student(name: "Taylor")
+print(Student.classSize)
+
+// Access Control
+
+struct Person4 {
+    private var id: String
+
+       init(id: String) {
+           self.id = id
+       }
+
+       func identify() -> String {
+           return "My social security number is \(id)"
+       }
+   }
+
+
+let john = Person4(id: "12345")
 
