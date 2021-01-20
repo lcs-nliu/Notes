@@ -48,4 +48,3 @@ home.y
 school.x
 school.y
 
-

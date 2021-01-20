@@ -92,3 +92,57 @@ toys.firstIndex(of: "Buzz")
 print(toys.sorted())
 toys.remove(at: 0)
 print(toys)
+
+// Initializer
+
+struct User {
+    var username: String
+    
+    init() {
+           username = "Anonymous"
+           print("Creating a new user!")
+       }
+    
+    
+}
+
+var user = User()
+user.username = "twostraws"
+
+
+
+// Referring to the current instance
+
+struct Person2 {
+    var name: String
+
+    init(name: String) {
+        print("\(name) was born!")
+        self.name = name
+    }
+}
+
+var birthName = Person2(name: "John")
+birthName.name
+
+// Lazy variables
+struct FamilyTree {
+    init() {
+        print("Creating family tree!")
+    }
+}
+
+struct Person3 {
+    var name: String
+    lazy var familyTree = FamilyTree()
+
+    init(name: String) {
+        self.name = name
+    }
+}
+
+var ed = Person3(name: "Ed")
+ed.familyTree
+
+
+
