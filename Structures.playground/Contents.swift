@@ -176,4 +176,3 @@ struct Person4 {
 
 
 let john = Person4(id: "12345")
-
